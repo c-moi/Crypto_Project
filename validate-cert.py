@@ -15,7 +15,7 @@ def verif_entree_user() :
     format = args.format
     fichier = args.fichier
 
-    if not fichier.endswith('.crt') :
+    if not fichier.endswith('.crt') or not fichier.endswith('.der'):
         print("Le fichier n'est pas au format CRT")
         return
 
